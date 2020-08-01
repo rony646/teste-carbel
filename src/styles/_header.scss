@@ -1,0 +1,112 @@
+@import './variables';
+@import './utils'; 
+
+header {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .contato {
+        @include flexCenter(center, center, space-around);
+        font-size: 13px;
+        font-weight: 300;
+        height: 25px;
+        width: 100%;
+        background-color: $bg-color-grey;
+        color: $font-color-grey;
+
+        .icon {
+            position: relative; // Tamanho e afastamento dos ícones
+            right: 10px;
+            height: 17px;
+        }
+        
+        
+        .contact-icon-desktop {
+            padding-left: 50px;
+        }
+
+        .contact-icon-mobile {
+            display: none;
+        }
+
+        div {
+            @include flexCenter(center, center, unset) // centralizando ícones dentro das divs
+        }
+        
+        @media(max-width: 600px) {
+            a {
+              display: none;   
+            }
+            .contact-icon-desktop {
+                display: none;
+
+            }
+
+            .contact-icon-mobile {
+                display: inline-block;
+            }
+            height: 40px;
+        }
+    }
+
+    .banzai-logo {
+        @include flexCenter(row, center, space-around);
+        position: relative;
+        height: 90px;
+        
+
+        div {
+            span {
+                position: relative;
+                font-weight: 300;
+                font-size: 18px;
+                color: $font-color-grey;
+                display: block;
+            }
+
+            #phone-number {
+                font-weight: 300;
+                font-size: 30px;
+                color: red;
+                text-align: center;
+            }
+        }
+
+        @media(max-width: 600px) {
+            @include flexCenter(column, center, space-around);
+            height: 200px;
+        }
+    }
+
+    .civic-imagem {
+        position: relative;
+        background-color: #fff;
+        background-image: url(../../src/assets/img/Civic_img_desktop.png);
+        background-size: 100% 400px;
+        background-repeat: no-repeat;
+        height: 400px;
+
+        #civic-titulo {
+            display: none; // titulo que aparece abaixo da imagem do civic somente no mobile
+            position: absolute;  
+            bottom: 0;
+        }
+
+        @media(max-width: 600px) {
+            @include flexCenter(row, center, center);
+            width: 100%;
+            background-size: auto;
+            background-position: center;
+            background-image: url(../../src/assets/img/Civic_EXL_2017_3_4_Lado_A_Preto_72dpi.png);
+            height: 400px;
+            #civic-titulo {
+                display: inline-block;
+            }
+        }
+    }
+
+
+
+}

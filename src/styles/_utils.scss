@@ -1,0 +1,10 @@
+@mixin flexCenter($direction, $align, $justify-content) {
+    
+    // Essa função configura elementos usando flexbox
+
+    display: flex;
+    justify-content: $justify-content;
+    flex-direction: $direction;
+    align-items: center;
+};
+

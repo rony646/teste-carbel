@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/main.css" /> <!-- Importando versão minificado do css-->
+    
     <title>Carbel</title>
 </head>
 <body>
-    <div>
-        <h1>Hello World!</h1>
-    </div>
+    <div class="container">
+
+        <header>
+
+            <!-- LINKS DE CONTATO -->
+
+            <nav class="contato">
+                <div>
+                    <img src="/src/assets/icons/home.svg" class="icon" alt="home"/>
+                    <a href="#">Ir para o portal Banzai</a>
+                </div>
+                <div>
+                    <img src="/src/assets/icons/map.svg" class="icon" alt="localização"/> 
+                    <a href="#">Encontre uma concessionária</a>
+                    <img src="/src/assets/icons/contact.svg"  class="contact-icon-desktop icon" alt="contato"/>
+                    <a href="#">Fale Conosco</a>
+                </div>
+                <div class="contact-icon-mobile">
+                   <img src="/src/assets/icons/contact.svg" alt="contato" />
+                </div>
+            </nav>
+
+            <!-- lOGO BANZAI / ATENDIMENTO -->
+
+            <div class="banzai-logo">
+                <img src="/src/assets/img/logo.png" />
+                <div>
+                    <span>CENTRAL DE ATENDIMENTO</span>
+                    <span id="phone-number">(31) 3123-1234</span>
+                </div>
+
+
+            </div>
+            <!-- IMGAGEM DO CIVIC -->
+
+            <div class="civic-imagem">
+                <span id="civic-titulo">
+                    <img src="./src/assets/img/civic-10.png"  alt="Civic 10ª geração"/> <!-- Imagem "Civic 10 geração *somente no mobile"-->
+                </span>
+            </div>
+
+            <div class="form-area">
+                a
+            </div>
+        </header>
+
+    </div>    
 </body>
 </html>
