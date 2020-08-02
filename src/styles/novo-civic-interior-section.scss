@@ -1,0 +1,41 @@
+#novo-civic-interior {
+    height: 415px;
+    position: relative;
+    color: $bg-color;
+    background-image: url(../../src/assets/img/civic-interior-bg.png);
+    background-position: center;
+    background-size: cover;
+    
+    #black-layer {
+        position: absolute;
+        bottom: 0;
+        max-width: 100%;
+
+    }
+    .descricao {
+        position: absolute;
+        bottom: 0;
+        padding: 0 $padding-desktop 0;
+
+        h1 {
+            font-weight: 300;
+            font-size: 2em;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.2em;
+        }
+    }
+
+    @media(max-width: 768px) {
+       padding: 0;
+       text-align: center;
+
+       #black-layer {
+           position: relative;
+           margin: 280px 0;
+           width: 100vw;
+       }
+    }
+}

@@ -2,6 +2,7 @@
 @import './utils'; // Funções úteis para o projeto
 @import './header'; // header style
 @import './novo-civic-section'; // Seção civic branco style
+@import './novo-civic-interior-section.scss'; // Seção banner interior civic
 
 body, html {
     width: 100%;
@@ -21,47 +22,64 @@ body, html {
 }
 
 
-#novo-civic-interior {
-    height: 415px;
-    position: relative;
-    color: $bg-color;
-    background-image: url(../../src/assets/img/civic-interior-bg.png);
-    background-position: center;
-    background-size: cover;
+
+#civic-detalhes {
+    height: 410px;
+    padding: 0 $padding-desktop 0;
     
-    #black-layer {
-        position: absolute;
-        bottom: 0;
-        max-width: 100%;
-
-    }
-    .descricao {
-        position: absolute;
-        bottom: 0;
-        padding: 0 $padding-desktop 0;
-
-        h1 {
-            font-weight: 300;
-            font-size: 2em;
+    .glide {
+        // Classe para estlizar o carousel
+        height: 100%;
+        width: 70%;
+        img {
+            width: 250px;
         }
 
-        p {
-            font-weight: 300;
-            font-size: 1.2em;
+        .arrow-button {
+            top: 100px;
+            box-shadow: none;
+            border: none;
+        }
+
+        .glide__bullet {
+            // Estiliza os bulltes do carousel 
+
+            background-color: lightgrey;
+            margin: 0 15px;
+            height: 13px;
+            width: 13px;
+        }
+
+        .glide__bullet--active {
+            background-color: $font-color-grey;
         }
     }
 
     @media(max-width: 768px) {
-       padding: 0;
-       text-align: center;
+        padding: 0 10px;
 
-       #black-layer {
-           display: none;
-       }
-    }
-}
+        height: 500px;
 
-#civic-detalhes {
-    height: 410px;
-    background-color: red;
+        .glide {
+            margin: 0 auto;
+            height: 100%;
+            width: 100%;
+            .arrow-button {
+                top: 50%;
+            }
+
+            .glide__bullet {
+                background-color: lightgrey;
+                margin: 0 15px;
+                bottom: 0;
+                height: 13px;
+                width: 13px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+        }
+    } 
 }

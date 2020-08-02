@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/main.css" /> <!-- Importando versão minificado do css-->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> <!-- Glide.js para o carousel-->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"> <!-- Glide.js theme para estilizar o carousel-->
     
-    <title>Carbel</title>
+    <title>Portal Honda Banzai</title>
 </head>
 <body>
     <div class="container">
@@ -144,11 +146,71 @@
 
         </section>
         
-        <!-- Seção civic detalhes-->
+        <!-- Seção civic detalhes e carousel-->
 
         <section id="civic-detalhes">
-            a
+            <div class="glide" style="">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="./src/assets/img/slide-01.png" alt="volante" />
+                        <strong>Direção com Assistência</strong>
+                        <p>Sistema de estabilidade que reforça 
+                        automaticamente o retorno da direção, 
+                        auxiliando o motorista em situações onde o 
+                        carro está ameaçado de instabilidade.</p>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="./src/assets/img/slide-02.png" alt="vidro elétrico"/>
+                        <strong>Vidros elétricos com subida automática</strong>
+                        <p>
+                            Todas as portas possuem vidros elétricos 
+                            com a função “um toque” e sistema de 
+                            segurança antiesmagamento.
+                        </p>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="./src/assets/img/slide-03.png" alt="cambio" />
+                        <strong>Câmbio CVT com Paddle Shift </strong>
+                        <p>
+                            O câmbio com transmissão CVT de 7 
+                            velocidade com Paddle Shift (aletas) 
+                            proporciona conforto ao trocar de 
+                            marchas.
+                        </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left arrow-button" data-glide-dir="<">
+                        <img src="./src/assets/icons/arrow-left.svg" style="width: 39px;" alt="direita"/>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right arrow-button" data-glide-dir=">">
+                        <img src="./src/assets/icons/arrow-right.svg" style="width: 39px;" alt="esquerda" />
+                    </button>
+
+                    <div class="slider__bullets glide__bullets"data-glide-el="controls[nav]">
+    
+                        <button class="slider__bullet glide__bullet" stlye="height: 40px" data-glide-dir="=0"></button>
+                      
+                        <button class="slider__bullet glide__bullet" data-glide-dir="=1"></button>
+                      
+                        <button class="slider__bullet glide__bullet" data-glide-dir="=2"></button>
+
+                    </div>
+
+                  </div>
+              </div>
+
+             
         </section>
-    </div>    
+    </div>
+    <footer>
+        <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+        <script src="./src/lib/slide.js"></script> <!-- Configuração do carousel-->
+    </footer>
+   
 </body>
 </html>

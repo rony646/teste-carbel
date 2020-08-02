@@ -227,20 +227,6 @@ header {
       #novo-civic p {
         width: 100%; } }
 
-body, html {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-family: 'Hind Siliguri', sans-serif; }
-
-.container {
-  position: relative;
-  max-width: 1920px;
-  height: 100vh;
-  margin: 0 auto;
-  background-color: #fff; }
-
 #novo-civic-interior {
   height: 415px;
   position: relative;
@@ -267,8 +253,58 @@ body, html {
       padding: 0;
       text-align: center; }
       #novo-civic-interior #black-layer {
-        display: none; } }
+        position: relative;
+        margin: 280px 0;
+        width: 100vw; } }
+
+body, html {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind Siliguri', sans-serif; }
+
+.container {
+  position: relative;
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #fff; }
 
 #civic-detalhes {
   height: 410px;
-  background-color: red; }
+  padding: 0 45px 0; }
+  #civic-detalhes .glide {
+    height: 100%;
+    width: 70%; }
+    #civic-detalhes .glide img {
+      width: 250px; }
+    #civic-detalhes .glide .arrow-button {
+      top: 100px;
+      box-shadow: none;
+      border: none; }
+    #civic-detalhes .glide .glide__bullet {
+      background-color: lightgrey;
+      margin: 0 15px;
+      height: 13px;
+      width: 13px; }
+    #civic-detalhes .glide .glide__bullet--active {
+      background-color: #999898; }
+  @media (max-width: 768px) {
+    #civic-detalhes {
+      padding: 0 10px;
+      height: 500px; }
+      #civic-detalhes .glide {
+        margin: 0 auto;
+        height: 100%;
+        width: 100%; }
+        #civic-detalhes .glide .arrow-button {
+          top: 50%; }
+        #civic-detalhes .glide .glide__bullet {
+          background-color: lightgrey;
+          margin: 0 15px;
+          bottom: 0;
+          height: 13px;
+          width: 13px; }
+        #civic-detalhes .glide img {
+          width: 100%; } }
