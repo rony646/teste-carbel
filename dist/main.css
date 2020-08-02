@@ -257,20 +257,6 @@ header {
         margin: 280px 0;
         width: 100vw; } }
 
-body, html {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-family: 'Hind Siliguri', sans-serif; }
-
-.container {
-  position: relative;
-  max-width: 1920px;
-  height: 100vh;
-  margin: 0 auto;
-  background-color: #fff; }
-
 #civic-detalhes {
   height: 410px;
   padding: 0 45px 0; }
@@ -299,7 +285,7 @@ body, html {
         height: 100%;
         width: 100%; }
         #civic-detalhes .glide .arrow-button {
-          top: 50%; }
+          top: 30%; }
         #civic-detalhes .glide .glide__bullet {
           background-color: lightgrey;
           margin: 0 15px;
@@ -308,3 +294,31 @@ body, html {
           width: 13px; }
         #civic-detalhes .glide img {
           width: 100%; } }
+
+body, html {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind Siliguri', sans-serif; }
+
+.container {
+  position: relative;
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #fff; }
+
+#opcoes-honda {
+  height: 450px;
+  background-color: lightgrey;
+  padding: 20px 45px; }
+  #opcoes-honda h1 {
+    font-size: 2em;
+    font-weight: 300; }
+  @media (max-width: 768px) {
+    #opcoes-honda {
+      padding: 0; }
+      #opcoes-honda h1 {
+        padding: 0 30px;
+        text-align: center; } }

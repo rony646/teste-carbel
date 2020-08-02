@@ -1,0 +1,64 @@
+@import './variables';
+@import './utils'; // Funções úteis para o projeto
+
+#civic-detalhes {
+    height: 410px;
+    padding: 0 $padding-desktop 0;
+    
+    .glide {
+        // Classe para estlizar o carousel
+        height: 100%;
+        width: 70%;
+        img {
+            width: 250px;
+        }
+
+        .arrow-button {
+            top: 100px;
+            box-shadow: none;
+            border: none;
+        }
+
+        .glide__bullet {
+            // Estiliza os bulltes do carousel 
+
+            background-color: lightgrey;
+            margin: 0 15px;
+            height: 13px;
+            width: 13px;
+        }
+
+        .glide__bullet--active {
+            background-color: $font-color-grey;
+        }
+    }
+
+    @media(max-width: 768px) {
+        padding: 0 10px;
+
+        height: 500px;
+
+
+        .glide {
+            margin: 0 auto;
+            height: 100%;
+            width: 100%;
+            .arrow-button {
+                top: 30%;
+            }
+
+            .glide__bullet {
+                background-color: lightgrey;
+                margin: 0 15px;
+                bottom: 0;
+                height: 13px;
+                width: 13px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+        }
+    } 
+}

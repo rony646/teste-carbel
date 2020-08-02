@@ -2,7 +2,8 @@
 @import './utils'; // Funções úteis para o projeto
 @import './header'; // header style
 @import './novo-civic-section'; // Seção civic branco style
-@import './novo-civic-interior-section.scss'; // Seção banner interior civic
+@import './novo-civic-interior-section'; // Seção banner interior civic
+@import './carrousel-detalhes-section'; // Seção carousel
 
 body, html {
     width: 100%;
@@ -21,65 +22,23 @@ body, html {
     background-color: $bg-color;
 }
 
-
-
-#civic-detalhes {
-    height: 410px;
-    padding: 0 $padding-desktop 0;
-    
-    .glide {
-        // Classe para estlizar o carousel
-        height: 100%;
-        width: 70%;
-        img {
-            width: 250px;
-        }
-
-        .arrow-button {
-            top: 100px;
-            box-shadow: none;
-            border: none;
-        }
-
-        .glide__bullet {
-            // Estiliza os bulltes do carousel 
-
-            background-color: lightgrey;
-            margin: 0 15px;
-            height: 13px;
-            width: 13px;
-        }
-
-        .glide__bullet--active {
-            background-color: $font-color-grey;
-        }
+#opcoes-honda {
+    height: 450px;
+    background-color: lightgrey;
+    padding: 20px $padding-desktop;
+    h1 {
+        font-size: 2em;
+        font-weight: 300;
     }
 
     @media(max-width: 768px) {
-        padding: 0 10px;
-
-        height: 500px;
-
-        .glide {
-            margin: 0 auto;
-            height: 100%;
-            width: 100%;
-            .arrow-button {
-                top: 50%;
-            }
-
-            .glide__bullet {
-                background-color: lightgrey;
-                margin: 0 15px;
-                bottom: 0;
-                height: 13px;
-                width: 13px;
-            }
-
-            img {
-                width: 100%;
-            }
-
+        padding: 0;
+        h1 {
+            padding: 0 30px;
+            text-align: center;
         }
-    } 
+    }
 }
+
+
+

@@ -1,0 +1,29 @@
+#novo-civic-interior {
+  height: 415px;
+  position: relative;
+  color: #fff;
+  background-image: url(../../src/assets/img/civic-interior-bg.png);
+  background-position: center;
+  background-size: cover; }
+  #novo-civic-interior #black-layer {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%; }
+  #novo-civic-interior .descricao {
+    position: absolute;
+    bottom: 0;
+    padding: 0 45px 0; }
+    #novo-civic-interior .descricao h1 {
+      font-weight: 300;
+      font-size: 2em; }
+    #novo-civic-interior .descricao p {
+      font-weight: 300;
+      font-size: 1.2em; }
+  @media (max-width: 768px) {
+    #novo-civic-interior {
+      padding: 0;
+      text-align: center; }
+      #novo-civic-interior #black-layer {
+        position: relative;
+        margin: 280px 0;
+        width: 100vw; } }
