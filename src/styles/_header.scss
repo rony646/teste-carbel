@@ -2,6 +2,7 @@
 @import './utils'; 
 
 header {
+    position: relative;
     a {
         text-decoration: none;
         color: inherit;
@@ -69,7 +70,7 @@ header {
             #phone-number {
                 font-weight: 300;
                 font-size: 30px;
-                color: red;
+                color: $font-color-red;
                 text-align: center;
             }
         }
@@ -81,6 +82,9 @@ header {
     }
 
     .civic-imagem {
+
+        // Configura o banner no inicío da página
+
         position: relative;
         background-color: #fff;
         background-image: url(../../src/assets/img/Civic_img_desktop.png);
@@ -90,8 +94,13 @@ header {
 
         #civic-titulo {
             display: none; // titulo que aparece abaixo da imagem do civic somente no mobile
-            position: absolute;  
-            bottom: 0;
+            
+        }
+
+        #selo {
+            position: absolute;
+            bottom: 35px;
+            left: 100px;
         }
 
         @media(max-width: 600px) {
@@ -103,8 +112,117 @@ header {
             height: 400px;
             #civic-titulo {
                 display: inline-block;
+                position: absolute;  
+                bottom: 0;
+            }
+            #selo {
+                display: none;
             }
         }
+    }
+
+    .form-area {
+        // essa classe centraliza e posiciona o formuláro
+        @include flexCenter(row, center, center);
+        position: fixed;
+        top: 220px;
+        height: 352px;
+        width: 270px;
+        right: 60px;
+
+        .form {
+
+            // essa classe e tudo dentro de seu escopo estliza o formulário e o deixa responsivos
+
+            @include flexCenter(column, space-around,center );
+            width: 95%;
+            height: 95%;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: $bg-color-grey;
+            font-family: inherit;
+
+            #contato {
+                display: inline-block;
+                padding: 0 10px;
+                span {
+                    font-weight: 300;
+                    display: block;
+                    font-size: 20px;
+                    color: $font-color-red;
+                }
+            }
+
+            .input-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 4px 0;
+                height: 37px;
+                background-color: $bg-color-grey;
+                border: 1px solid $font-color-grey;
+                border-radius: 5px;
+                color: $font-color-grey;
+                font-weight: 300;
+                span {
+                    height: 20px;
+                    padding: 0px 10px;
+                }
+                input, select {
+                    height: 100%;
+                    font-size: 18px;
+                    color: $font-color-grey;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    height: 100%;
+                    width: 100%;
+                    transition: border 0.5s;
+                }
+            }
+
+            .submit-button {
+                position: relative;
+                top: 4px;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                font-family: inherit;
+                font-weight: 900;
+                height: 100%;
+                color: white;
+                background-color: #1CB72A;
+                transition: all 0.3s;
+            }
+
+            .submit-button:hover {
+                background-color: #068310;
+            }
+        }
+
+        @media(max-width: 600px) {
+            position: relative;
+            top: 0;
+            right: 0;
+            height: 500px;
+            width: 100%;
+            .form {
+                width: 80%;
+                height: 85%;
+                
+                .input-container {
+                    height: 40px;
+                    margin: 8px 0;
+                }
+
+                .submit-button {
+                    position: relative;
+                    top: 8px;
+                    height: 70px;
+                }
+            }
+        } 
     }
 
 

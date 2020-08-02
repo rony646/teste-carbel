@@ -12,14 +12,16 @@ body, html {
 
 
 .container {
+    position: relative;
     max-width: 1920px;
     height: 100vh;
     margin: 0 auto;
     background-color: $bg-color;
 }
 
-.form-area{
-    background-color: blue;
+#scroll-teste {
+    background-color: #ccc;
+    height: 800px;
 }
 
 

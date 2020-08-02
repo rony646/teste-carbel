@@ -45,16 +45,67 @@
             <!-- IMGAGEM DO CIVIC -->
 
             <div class="civic-imagem">
+                <span id="selo">
+                    <img src="./src/assets/img/os-eleitos-grande-vencedor-2017_0.png"  alt="selo quadro rodas"/>
+                </span>
+                
                 <span id="civic-titulo">
                     <img src="./src/assets/img/civic-10.png"  alt="Civic 10ª geração"/> <!-- Imagem "Civic 10 geração *somente no mobile"-->
                 </span>
             </div>
 
+            <!-- Formulário -->
+
             <div class="form-area">
-                a
+                <form method="POST" action="#" class="form">
+                    <div>
+                        <span><img src="./src/assets/icons/phone.svg" alt="telefone" height="45px"></span>
+                        <div id="contato">
+                            Solicitar um
+                            <span>CONTATO</span>
+                        </div>
+                    </div>
+                    
+                    <div class="input-container">
+                        <span><img src="./src/assets/icons/person.svg"/></span>
+                        <input type="text" name="nome" placeholder="Nome"/>
+                    </div>
+                    
+                    <div class="input-container">
+                        <span><img src="./src/assets/icons/contact.svg"/></span>
+                        <input type="text" name="email" placeholder="E-mail">
+                    </div>
+
+                    <div class="input-container">
+                        <span><img src="./src/assets/icons/phone-sm.svg"/></span>
+                        <input type="text" name="telefone" placeholder="Telefone">
+                    </div>
+                    
+                    <div class="input-container">
+                        <span><img src="./src/assets/icons/clock.svg"/></span>
+                        <select>
+                            <option value="">Selecione um horário</option>
+                            <option value="17:30">17:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="8:000">8:00</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-container">
+                        <span><img src="./src/assets/icons/map.svg"/></span>
+                        <select p>
+                            <option value="">Selecione a unidade</option>
+                            <option value="contagem">Contagem</option>
+                            <option value="betim">Betim</option>
+                            <option value="belo horizonte">Belo Horizonte</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">AGENDAR TESTE DRIVE</button>
+                </form>
             </div>
         </header>
-
+        <section id="scroll-teste"></section>
     </div>    
 </body>
 </html>

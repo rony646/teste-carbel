@@ -1,91 +1,181 @@
-header a {
-  text-decoration: none;
-  color: inherit; }
-
-header .contato {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: center;
-  align-items: center;
-  font-size: 13px;
-  font-weight: 300;
-  height: 25px;
-  width: 100%;
-  background-color: #EEEEEE;
-  color: #999898; }
-  header .contato .icon {
-    position: relative;
-    right: 10px;
-    height: 17px; }
-  header .contato .contact-icon-desktop {
-    padding-left: 50px; }
-  header .contato .contact-icon-mobile {
-    display: none; }
-  header .contato div {
+header {
+  position: relative; }
+  header a {
+    text-decoration: none;
+    color: inherit; }
+  header .contato {
     display: flex;
-    justify-content: unset;
+    justify-content: space-around;
     flex-direction: center;
-    align-items: center; }
-  @media (max-width: 600px) {
-    header .contato {
-      height: 40px; }
-      header .contato a {
-        display: none; }
-      header .contato .contact-icon-desktop {
-        display: none; }
-      header .contato .contact-icon-mobile {
-        display: inline-block; } }
-
-header .banzai-logo {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  height: 90px; }
-  header .banzai-logo div span {
-    position: relative;
+    align-items: center;
+    font-size: 13px;
     font-weight: 300;
-    font-size: 18px;
-    color: #999898;
-    display: block; }
-  header .banzai-logo div #phone-number {
-    font-weight: 300;
-    font-size: 30px;
-    color: red;
-    text-align: center; }
-  @media (max-width: 600px) {
-    header .banzai-logo {
+    height: 25px;
+    width: 100%;
+    background-color: #EEEEEE;
+    color: #999898; }
+    header .contato .icon {
+      position: relative;
+      right: 10px;
+      height: 17px; }
+    header .contato .contact-icon-desktop {
+      padding-left: 50px; }
+    header .contato .contact-icon-mobile {
+      display: none; }
+    header .contato div {
       display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      align-items: center;
-      height: 200px; } }
-
-header .civic-imagem {
-  position: relative;
-  background-color: #fff;
-  background-image: url(../../src/assets/img/Civic_img_desktop.png);
-  background-size: 100% 400px;
-  background-repeat: no-repeat;
-  height: 400px; }
-  header .civic-imagem #civic-titulo {
-    display: none;
-    position: absolute;
-    bottom: 0; }
-  @media (max-width: 600px) {
-    header .civic-imagem {
+      justify-content: unset;
+      flex-direction: center;
+      align-items: center; }
+    @media (max-width: 600px) {
+      header .contato {
+        height: 40px; }
+        header .contato a {
+          display: none; }
+        header .contato .contact-icon-desktop {
+          display: none; }
+        header .contato .contact-icon-mobile {
+          display: inline-block; } }
+  header .banzai-logo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 90px; }
+    header .banzai-logo div span {
+      position: relative;
+      font-weight: 300;
+      font-size: 18px;
+      color: #999898;
+      display: block; }
+    header .banzai-logo div #phone-number {
+      font-weight: 300;
+      font-size: 30px;
+      color: red;
+      text-align: center; }
+    @media (max-width: 600px) {
+      header .banzai-logo {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        height: 200px; } }
+  header .civic-imagem {
+    position: relative;
+    background-color: #fff;
+    background-image: url(../../src/assets/img/Civic_img_desktop.png);
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    height: 400px; }
+    header .civic-imagem #civic-titulo {
+      display: none; }
+    header .civic-imagem #selo {
+      position: absolute;
+      bottom: 35px;
+      left: 100px; }
+    @media (max-width: 600px) {
+      header .civic-imagem {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        background-size: auto;
+        background-position: center;
+        background-image: url(../../src/assets/img/Civic_EXL_2017_3_4_Lado_A_Preto_72dpi.png);
+        height: 400px; }
+        header .civic-imagem #civic-titulo {
+          display: inline-block;
+          position: absolute;
+          bottom: 0; }
+        header .civic-imagem #selo {
+          display: none; } }
+  header .form-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 220px;
+    height: 352px;
+    width: 270px;
+    right: 60px; }
+    header .form-area .form {
       display: flex;
       justify-content: center;
-      flex-direction: row;
-      align-items: center;
-      width: 100%;
-      background-size: auto;
-      background-position: center;
-      background-image: url(../../src/assets/img/Civic_EXL_2017_3_4_Lado_A_Preto_72dpi.png);
-      height: 400px; }
-      header .civic-imagem #civic-titulo {
-        display: inline-block; } }
+      flex-direction: column;
+      align-items: space-around;
+      width: 95%;
+      height: 95%;
+      padding: 15px;
+      border-radius: 5px;
+      background-color: #EEEEEE;
+      font-family: inherit; }
+      header .form-area .form #contato {
+        display: inline-block;
+        padding: 0 10px; }
+        header .form-area .form #contato span {
+          font-weight: 300;
+          display: block;
+          font-size: 20px;
+          color: red; }
+      header .form-area .form .input-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px 0;
+        height: 37px;
+        background-color: #EEEEEE;
+        border: 1px solid #999898;
+        border-radius: 5px;
+        color: #999898;
+        font-weight: 300; }
+        header .form-area .form .input-container span {
+          height: 20px;
+          padding: 0px 10px; }
+        header .form-area .form .input-container input, header .form-area .form .input-container select {
+          height: 100%;
+          font-size: 18px;
+          color: #999898;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          height: 100%;
+          width: 100%;
+          transition: border 0.5s; }
+      header .form-area .form .submit-button {
+        position: relative;
+        top: 4px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: inherit;
+        font-weight: 900;
+        height: 100%;
+        color: white;
+        background-color: #1CB72A;
+        transition: all 0.3s; }
+      header .form-area .form .submit-button:hover {
+        background-color: #068310; }
+    @media (max-width: 600px) {
+      header .form-area {
+        position: relative;
+        top: 0;
+        right: 0;
+        height: 500px;
+        width: 100%; }
+        header .form-area .form {
+          width: 80%;
+          height: 85%; }
+          header .form-area .form .input-container {
+            height: 40px;
+            margin: 8px 0; }
+          header .form-area .form .submit-button {
+            position: relative;
+            top: 8px;
+            height: 70px; } }
 
 body, html {
   width: 100%;
@@ -95,10 +185,12 @@ body, html {
   font-family: 'Hind Siliguri', sans-serif; }
 
 .container {
+  position: relative;
   max-width: 1920px;
   height: 100vh;
   margin: 0 auto;
   background-color: #fff; }
 
-.form-area {
-  background-color: blue; }
+#scroll-teste {
+  background-color: #ccc;
+  height: 800px; }
