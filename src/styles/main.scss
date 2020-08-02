@@ -1,6 +1,7 @@
 @import './variables';
 @import './utils'; // Funções úteis para o projeto
 @import './header'; // header style
+@import './novo-civic-section'; // Seção civic branco style
 
 body, html {
     width: 100%;
@@ -19,10 +20,7 @@ body, html {
     background-color: $bg-color;
 }
 
-#scroll-teste {
-    background-color: #ccc;
-    height: 800px;
-}
+
 
 
 

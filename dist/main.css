@@ -27,7 +27,7 @@ header {
       justify-content: unset;
       flex-direction: center;
       align-items: center; }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       header .contato {
         height: 40px; }
         header .contato a {
@@ -54,7 +54,7 @@ header {
       font-size: 30px;
       color: red;
       text-align: center; }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       header .banzai-logo {
         display: flex;
         justify-content: space-around;
@@ -74,7 +74,7 @@ header {
       position: absolute;
       bottom: 35px;
       left: 100px; }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       header .civic-imagem {
         display: flex;
         justify-content: center;
@@ -100,7 +100,8 @@ header {
     top: 220px;
     height: 352px;
     width: 270px;
-    right: 60px; }
+    right: 60px;
+    z-index: 200; }
     header .form-area .form {
       display: flex;
       justify-content: center;
@@ -153,13 +154,13 @@ header {
         font-size: 16px;
         font-family: inherit;
         font-weight: 900;
-        height: 100%;
+        height: 60px;
         color: white;
         background-color: #1CB72A;
         transition: all 0.3s; }
       header .form-area .form .submit-button:hover {
         background-color: #068310; }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       header .form-area {
         position: relative;
         top: 0;
@@ -177,6 +178,55 @@ header {
             top: 8px;
             height: 70px; } }
 
+#novo-civic {
+  position: relative;
+  z-index: 100;
+  height: 500px;
+  padding: 0 45px 0px; }
+  #novo-civic h1 {
+    font-weight: 300; }
+  #novo-civic p {
+    font-weight: 300;
+    width: 60%; }
+  #novo-civic .img-container {
+    display: flex;
+    justify-content: unset;
+    flex-direction: row;
+    align-items: center; }
+    #novo-civic .img-container .civic-fotos {
+      display: flex;
+      justify-content: unset;
+      flex-direction: column;
+      align-items: unset; }
+    #novo-civic .img-container .img-border {
+      position: relative;
+      margin: 4px 0px;
+      padding: 3px;
+      border: 1px solid #999898; }
+    #novo-civic .img-container .civic-imagem-grande {
+      position: relative;
+      margin-left: 50px; }
+  @media (max-width: 768px) {
+    #novo-civic {
+      padding: 10px;
+      height: 400px; }
+      #novo-civic .img-container {
+        display: flex;
+        justify-content: unset;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+        #novo-civic .img-container .civic-fotos {
+          display: none; }
+        #novo-civic .img-container .civic-imagem-grande {
+          margin: 0; }
+        #novo-civic .img-container #civic-imagem-grande {
+          width: 350px; }
+      #novo-civic h1, #novo-civic p {
+        text-align: center; }
+      #novo-civic p {
+        width: 100%; } }
+
 body, html {
   width: 100%;
   height: 100vh;
@@ -190,7 +240,3 @@ body, html {
   height: 100vh;
   margin: 0 auto;
   background-color: #fff; }
-
-#scroll-teste {
-  background-color: #ccc;
-  height: 800px; }

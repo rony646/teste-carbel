@@ -36,7 +36,7 @@ header {
             @include flexCenter(center, center, unset) // centralizando ícones dentro das divs
         }
         
-        @media(max-width: 600px) {
+        @media(max-width: 768px) {
             a {
               display: none;   
             }
@@ -75,7 +75,7 @@ header {
             }
         }
 
-        @media(max-width: 600px) {
+        @media(max-width: 768px) {
             @include flexCenter(column, center, space-around);
             height: 200px;
         }
@@ -103,7 +103,7 @@ header {
             left: 100px;
         }
 
-        @media(max-width: 600px) {
+        @media(max-width: 768px) {
             @include flexCenter(row, center, center);
             width: 100%;
             background-size: auto;
@@ -129,6 +129,7 @@ header {
         height: 352px;
         width: 270px;
         right: 60px;
+        z-index: 200;
 
         .form {
 
@@ -190,7 +191,7 @@ header {
                 font-size: 16px;
                 font-family: inherit;
                 font-weight: 900;
-                height: 100%;
+                height: 60px;
                 color: white;
                 background-color: #1CB72A;
                 transition: all 0.3s;
@@ -201,7 +202,7 @@ header {
             }
         }
 
-        @media(max-width: 600px) {
+        @media(max-width: 768px) {
             position: relative;
             top: 0;
             right: 0;
@@ -224,7 +225,4 @@ header {
             }
         } 
     }
-
-
-
 }
