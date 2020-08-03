@@ -376,13 +376,20 @@ body, html {
   margin: 0 auto;
   background-color: #fff; }
 
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px; }
+
 footer .sub-footer {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
   background-color: #EEEEEE;
-  height: 250px; }
+  height: 320px; }
   footer .sub-footer .social-icons span {
     margin: 0 10px; }
     footer .sub-footer .social-icons span a {

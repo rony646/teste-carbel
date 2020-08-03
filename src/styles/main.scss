@@ -24,10 +24,19 @@ body, html {
 }
 
 footer {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+
     .sub-footer {
         @include flexCenter(column, center, space-around);
         background-color: $bg-color-grey;
-        height: 250px;
+        height: 320px;
 
         .social-icons {
             span {
