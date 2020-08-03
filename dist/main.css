@@ -112,7 +112,8 @@ header {
       padding: 15px;
       border-radius: 5px;
       background-color: #EEEEEE;
-      font-family: inherit; }
+      font-family: inherit;
+      box-shadow: 1px 1px 5px #999898; }
       header .form-area .form #contato {
         display: inline-block;
         padding: 0 10px; }
@@ -295,6 +296,72 @@ header {
         #civic-detalhes .glide img {
           width: 100%; } }
 
+#opcoes-honda {
+  position: relative;
+  height: 480px;
+  padding: 20px 45px; }
+  #opcoes-honda h1 {
+    position: relative;
+    font-size: 2em;
+    font-weight: 300; }
+  #opcoes-honda .mobile-select-menu {
+    display: none; }
+  #opcoes-honda .cards-container {
+    display: flex;
+    justify-content: unset;
+    flex-direction: row;
+    align-items: center; }
+    #opcoes-honda .cards-container .card {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding: 10px;
+      margin: 20px 40px 0px 0px;
+      border: 2px solid #EEEEEE;
+      height: 300px;
+      width: 220px;
+      background-color: #fff; }
+      #opcoes-honda .cards-container .card .card-button {
+        background-color: inherit;
+        font-style: inherit;
+        height: 36px;
+        width: 100%;
+        border: 2px solid #EEEEEE;
+        border-radius: 5px;
+        transition: all 0.3s; }
+      #opcoes-honda .cards-container .card .card-button:hover {
+        background-color: #EEEEEE;
+        border: 2px solid #414141; }
+      #opcoes-honda .cards-container .card img {
+        height: 145px; }
+      #opcoes-honda .cards-container .card p {
+        text-justify: center;
+        font-size: 0.8em; }
+  @media (max-width: 768px) {
+    #opcoes-honda {
+      padding: 10px 0px;
+      height: 1300px;
+      position: relative;
+      text-align: center; }
+      #opcoes-honda h1 {
+        text-align: center; }
+      #opcoes-honda span {
+        font-size: 1.2em; }
+      #opcoes-honda .mobile-select-menu {
+        display: block; }
+      #opcoes-honda .cards-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; }
+        #opcoes-honda .cards-container .card {
+          margin: 10px 0; } }
+  @media (max-width: 768px) and (max-width: 768px) and (height: 1024px) {
+    #opcoes-honda {
+      padding: 110px; } }
+
 body, html {
   width: 100%;
   height: 100vh;
@@ -309,16 +376,66 @@ body, html {
   margin: 0 auto;
   background-color: #fff; }
 
-#opcoes-honda {
-  height: 450px;
-  background-color: lightgrey;
-  padding: 20px 45px; }
-  #opcoes-honda h1 {
-    font-size: 2em;
-    font-weight: 300; }
-  @media (max-width: 768px) {
-    #opcoes-honda {
-      padding: 0; }
-      #opcoes-honda h1 {
-        padding: 0 30px;
-        text-align: center; } }
+footer .sub-footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EEEEEE;
+  height: 250px; }
+  footer .sub-footer .social-icons span {
+    margin: 0 10px; }
+    footer .sub-footer .social-icons span a {
+      text-decoration: none; }
+  footer .sub-footer h1 {
+    font-weight: 300;
+    font-size: 30px; }
+  footer .sub-footer .avisos-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #727B7A; }
+    footer .sub-footer .avisos-container #atendimento span {
+      display: block;
+      color: red;
+      font-size: 2em; }
+    footer .sub-footer .avisos-container #local {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+      font-size: 15px; }
+      footer .sub-footer .avisos-container #local #red {
+        text-align: right;
+        font-size: 1.5em;
+        display: block;
+        color: red; }
+    footer .sub-footer .avisos-container .aviso {
+      padding: 5px;
+      text-align: center;
+      display: inline-block;
+      margin: 0 15px;
+      height: 70px;
+      width: 240px;
+      background-color: #fff;
+      border: 1px solid red;
+      border-radius: 5px; }
+    footer .sub-footer .avisos-container .aviso:hover {
+      background-color: #eee; }
+
+@media (max-width: 768px) {
+  footer .sub-footer {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: unset;
+    flex-direction: column;
+    align-items: center; }
+    footer .sub-footer h1 {
+      text-align: center; }
+    footer .sub-footer .avisos-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      footer .sub-footer .avisos-container .aviso {
+        margin: 15px 20px; } }

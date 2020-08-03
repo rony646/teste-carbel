@@ -1,0 +1,88 @@
+@import './variables';
+@import './utils'; // Funções úteis para o projeto
+
+#opcoes-honda {
+    position: relative;
+    height: 480px;
+    // background-color: #ccc;
+    padding: 20px $padding-desktop;
+
+    h1 {
+        position: relative;
+        font-size: 2em;
+        font-weight: 300;
+    }
+
+    .mobile-select-menu {
+        display: none;
+    }
+
+    .cards-container {
+        @include flexCenter(row, center, unset);
+        .card {
+            @include flexCenter(column, center, center);
+            position: relative;
+            padding: 10px;
+            margin: 20px 40px 0px 0px;
+            border: 2px solid $bg-color-grey;
+            height: 300px;
+            width: 220px;
+            background-color: $bg-color;
+
+            .card-button {
+                background-color: inherit;
+                font-style: inherit;
+                height: 36px;
+                width: 100%;
+                border: 2px solid $bg-color-grey;
+                border-radius: 5px;
+                transition: all 0.3s;
+            }
+
+            .card-button:hover {
+                background-color: $bg-color-grey;
+                border: 2px solid #414141;
+            }
+
+            img {
+                height: 145px;
+            }
+
+            p {
+                text-justify: center;
+                font-size: 0.8em;
+            }
+        }
+    }
+    
+
+    @media(max-width: 768px) {
+        padding: 10px 0px;
+        height: 1300px;
+        position: relative;
+        text-align: center;
+
+        h1 {
+            text-align: center;
+        }
+
+        span {
+            font-size: 1.2em;
+        };
+        
+        .mobile-select-menu {
+            display: block;
+        }
+
+        .cards-container {
+            @include flexCenter(column, center, center);
+            .card {
+                margin: 10px 0;
+            }
+        }
+
+     @media(max-width: 768px) and (height: 1024px) {
+         padding: 110px;
+     }
+    }
+}

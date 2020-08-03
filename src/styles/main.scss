@@ -4,6 +4,7 @@
 @import './novo-civic-section'; // Seção civic branco style
 @import './novo-civic-interior-section'; // Seção banner interior civic
 @import './carrousel-detalhes-section'; // Seção carousel
+@import './opcoes-honda-section'; // Seção com os cards
 
 body, html {
     width: 100%;
@@ -22,23 +23,88 @@ body, html {
     background-color: $bg-color;
 }
 
-#opcoes-honda {
-    height: 450px;
-    background-color: lightgrey;
-    padding: 20px $padding-desktop;
-    h1 {
-        font-size: 2em;
-        font-weight: 300;
+footer {
+    .sub-footer {
+        @include flexCenter(column, center, space-around);
+        background-color: $bg-color-grey;
+        height: 250px;
+
+        .social-icons {
+            span {
+                margin: 0 10px;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 30px;
+        }
+
+        .avisos-container {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            color: #727B7A;
+            #atendimento {
+                span {
+                    display: block;
+                    color: red;
+                    font-size: 2em;
+                }
+            }
+
+            #local {
+                @include flexCenter(row, center, space-evenly);
+                font-size: 15px;
+                #red {
+                   text-align: right;
+                   font-size: 1.5em;
+                   display: block;
+                   color: red; 
+                }
+            }
+
+            .aviso {
+                padding: 5px;
+                text-align: center;
+                display: inline-block;
+                margin: 0 15px;
+                height: 70px;
+                width: 240px;
+                background-color: $bg-color;
+                border: 1px solid $font-color-red;
+                border-radius: 5px;
+            }
+
+            .aviso:hover {
+                background-color: #eee;
+            }
+        }
     }
 
     @media(max-width: 768px) {
-        padding: 0;
-        h1 {
-            padding: 0 30px;
-            text-align: center;
+        .sub-footer {
+            height: 450px;
+            width: 100%;
+            @include flexCenter(column, center, unset);
+
+            h1 {
+                text-align: center;
+            }
+
+            .avisos-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .aviso {
+                    margin: 15px 20px;
+                }
+            }
         }
     }
 }
-
-
-
